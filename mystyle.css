@@ -1,0 +1,200 @@
+html{
+    height:100%;
+}
+body{
+    height:100%;
+    width:100%;
+    overflow: hidden;
+}
+
+#main-menu
+{
+    position:fixed;
+    top:0;
+    width:100%;
+    height:18%;
+    background:linear-gradient(to bottom,black,rgba(0,0,0,0));
+    padding:10px;
+}
+#main-menu .row, .col-sm-10{
+    height:100%;
+    width:100%;
+    padding:0;
+    margin: 0;
+    overflow: hidden;
+}
+#main-menu .col-sm-1{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+#main-menu img
+{
+    height:100%;
+    padding-left:10px;
+}
+
+#about, #faq{
+    color:white;
+    font-family:"rockwell";
+    font-size:200%;
+    cursor:pointer;
+ }
+
+#mainView
+{
+    background-image:url(images/wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position:static;
+}
+#mV_content{
+    width: 50%;
+}
+#videoView
+{
+    background-color:black;
+    width:100%;
+    height:100%;
+    position:static;
+}
+.grid-container{
+    display:grid;
+    grid-template-columns: auto 50% auto;
+    grid-template-rows: 75% 25%;
+    width:inherit;
+    height:inherit;
+}
+.item1{
+    grid-column: 1;
+    background-image: url("images/left.png");
+    background-size: 100% 100%;
+}
+.item2{
+    grid-column: 2;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:static;
+    background-color: #ecbf71;
+}
+.item3{
+    grid-column: 3;
+    background-image: url("images/right.png");
+    background-size:100% 100%;
+}
+.item4{
+    grid-column: 1/4;
+    display:flex;
+    background-image: url("images/seats.png");
+    background-size: 100% 100%;
+}
+
+
+#url-index,#loop_counter
+{
+    padding:11px;
+    border:none;
+    border-radius:5px;
+    width:100%;
+    outline:none;
+}
+
+#makeViewsButton
+{
+    padding:auto;
+    width:100%;
+    height:100%;
+    border:green 5px solid;
+    border-radius:5px;
+    background:#6dd176;
+    color:red;
+    text-shadow:2px 2px white;
+    font-family: 'rockwell';
+    font-size: large;
+    font-weight: bold;
+    outline:none;
+}
+#goHome{
+    position:fixed;
+    width:70px;
+    height:70px;
+    right:20px;
+    bottom:20px;
+    border-radius:50%;
+    border:5px solid red;
+    background-image: url("images/homeLogo.png");
+}
+
+#current_count, #total_count{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    font-family: "rockwell";
+    font-size:150%;
+}
+#c_count, #t_count{
+    font-size:300%;
+}
+
+.count, .mute, .watch{
+    color:white;
+    padding:0px;
+    padding-right:20px;
+    text-shadow:2px 2px red;
+    font-family: 'rockwell';
+    font-size:150%;
+    font-weight: bold;
+}
+
+.toggle{
+    width:100px;
+    height:50px;
+    border-radius:25px;
+    cursor:pointer
+}
+.toggle_input{
+    display:none;
+}
+.toggle_fill{
+    position:relative;
+    width:100px;
+    height:50px;
+    border:2px solid white;
+    border-radius:25px;
+    background: grey;
+    transition: background 0.5s;
+}
+.toggle_input:checked ~ .toggle_fill{
+    background: red;
+}
+.toggle_fill::after{
+    content:"";
+    position:absolute;
+    height:55px;
+    width:55px;
+    background:black;
+    top:-5px;
+    left:-5px;
+    border-radius:50%;
+    border:2px solid white;
+    transition: transform 0.5s;
+}
+.toggle_input:checked ~ .toggle_fill::after{
+    transform:translateX(50px);
+}
+
+
+@media screen and (max-device-width: 800px){
+    #block_view{
+        display:block;
+    }
+}
