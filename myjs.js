@@ -28,7 +28,7 @@ function makeVideoView(){
       else
             mute="&mute=1";
       if(link==""){
-            document.getElementById("videoPlayer").setAttribute("src","https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&controls=0&disablekb=1"+mute);
+            document.getElementById("videoPlayer").setAttribute("src","https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&controls=0&disablekb=1");
             document.getElementById("c_count").innerHTML=1;
             document.getElementById("t_count").innerHTML=1;
       }
