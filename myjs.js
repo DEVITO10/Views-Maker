@@ -31,6 +31,7 @@ function makeVideoView(){
             document.getElementById("videoPlayer").setAttribute("src","https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&controls=0&disablekb=1");
             document.getElementById("c_count").innerHTML=1;
             document.getElementById("t_count").innerHTML=1;
+            goToHome();
       }
       else{
             loop=document.getElementById("loop_counter").value;
