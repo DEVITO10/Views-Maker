@@ -31,6 +31,8 @@ function makeVideoView(){
             document.getElementById("videoPlayer").setAttribute("src","https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&controls=0&disablekb=1");
             document.getElementById("c_count").innerHTML=1;
             document.getElementById("t_count").innerHTML=1;
+            setTimeout(() => {document.getElementById("rickroll").style="transform: translate(0px, -100px);"},500);
+            setTimeout(() => {document.getElementById("rickroll").style="transform: translate(0px, 100px);"},3000);
             setTimeout(goToHome,60000);
       }
       else{

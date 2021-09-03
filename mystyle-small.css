@@ -1,0 +1,58 @@
+@media screen and (max-device-width: 480px)
+{
+    #main-menu{
+        height:12%;
+    }
+    #main-menu .col-sm-1{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+    #mV_content{
+        width: 90%;
+    }
+    #mV_content .col-sm-2{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+    #goHome{
+        width:100px;
+        height:100px;
+        right:50px;
+        bottom:50px;
+    }
+    #url-index, #makeViewsButton, .col-sm-4, .col-sm-3, .col-sm-5{
+        margin-top:10px;
+    }
+    .toggle{
+        width:80px;
+        height:40px;
+        border-radius:20px;
+        cursor:pointer
+    }
+    .toggle_input{
+        display:none;
+    }
+    .toggle_fill{
+        position:relative;
+        width:80px;
+        height:40px;
+        border:2px solid white;
+        border-radius:20px;
+        background: grey;
+        transition: background 0.5s;
+    }
+    .toggle_fill::after{
+        content:"";
+        position:absolute;
+        height:45px;
+        width:45px;
+        background:black;
+        top:-5px;
+        left:-5px;
+        border-radius:50%;
+        border:2px solid white;
+        transition: transform 0.5s;
+    }
+}
