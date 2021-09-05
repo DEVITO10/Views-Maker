@@ -16,6 +16,9 @@
         justify-content: center;
         align-items:center;
     }
+    .grid-container{
+        grid-template-columns: auto 80% auto;
+    }
     #goHome{
         width:50px;
         height:50px;
