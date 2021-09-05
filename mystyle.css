@@ -25,27 +25,26 @@ body{
     display:grid;
     grid-template-columns: 80% auto auto;
     grid-template-rows: 100%;
-    padding:0;
+    padding:0px 10px 0px 10px;
     margin: 0;
 }
-.grid-main .main-item-1, .main-item-2, .main-item-3{
+.grid-main .main-item-1, .main-item-2, .main-item-3, .main-item-4{
     width:100%;
     height:inherit;
     grid-row: 1;
     display:flex;
     align-items: center;
+    color:white;
 }
 .main-item-1 img
 {
     height:inherit;
-    padding-left:10px;
 }
 .main-item-4 {
     display:none;
 }
 
 #about, #faq{
-    color:white;
     font-family:"rockwell";
     font-size:200%;
     cursor:pointer;

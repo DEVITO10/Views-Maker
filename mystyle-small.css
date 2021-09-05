@@ -3,10 +3,21 @@
     #main-menu{
         height:12%;
     }
-    #main-menu .col-sm-1{
+    #main-menu .main-item-2, .main-item-3{
+        display: none;
+    }
+    #main-menu .main-item-4{
+        display:block;
         display: flex;
-        justify-content: center;
         align-items:center;
+        justify-content: right;
+        grid-column: 2/4;
+    }
+    #main-menu .main-item-4 button{
+        background:none;
+        border:2px solid white;
+        border-radius: 20%;
+        outline:none;
     }
     #mV_content{
         width: 90%;
