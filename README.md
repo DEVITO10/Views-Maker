@@ -5,3 +5,5 @@ if no url is entered you will get rickrolled.
 
 mute button specifies if the video playback will be with sound (un-muted) or without sound (muted).
 [default is set to muted.]
+
+full button is under construction
