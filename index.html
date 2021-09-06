@@ -22,10 +22,10 @@
               <img id="head-logo-long" src="images/logo_big.png" alt="logo-long" style="display:none">
             </div>
             <div class="main-item-2">
-              <label id="about">About</label>
+              <button data-modal-tagert="#modal-about" id="about" onclick="showModal('modal-about')">About</button>
             </div>
             <div class="main-item-3">
-              <label id="faq">FAQ</label>
+              <button data-modal-tagert="#modal-faq" id="faq" onclick="showModal('modal-faq')">FAQ</button>
             </div>
             <div class="main-item-4">
               <button type="menu">
@@ -34,6 +34,28 @@
             </div>
           </div>
         </div>
+
+        <div class="modal-about" id="modal-about">
+          <div class="modal-header">
+            ABOUT
+            <button data-close-button class="close-button" style="background:none;border:none;outline:none;" onclick="closeModal('modal-about')">&times;</button>
+          </div>
+          <div class="modal-body">
+
+          </div>
+        </div>
+
+        <div class="modal-faq" id="modal-faq">
+          <div class="modal-header">
+            FAQ
+            <button data-close-button class="close-button" style="background:none;border:none;outline:none;" onclick="closeModal('modal-faq')">&times;</button>
+          </div>
+          <div class="modal-body">
+            
+          </div>
+        </div>
+
+        <div id="overlay"></div>
 
         <div id='mainView' >
           <div id="mV_content">

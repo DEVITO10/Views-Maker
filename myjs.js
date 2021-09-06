@@ -70,6 +70,15 @@ function logoChanger(){
             document.getElementById("goHome").style="display:none";
 }
 
+function showModal(modal){
+      document.getElementById(modal).classList.add("active");
+      document.getElementById("overlay").classList.add("active");
+}
+function closeModal(modal){
+      document.getElementById(modal).classList.remove("active");
+      document.getElementById("overlay").classList.remove("active");
+
+}
 function goToHome(){
       document.getElementById("mainView").scrollIntoView({behavior:"smooth"});
       link="";
