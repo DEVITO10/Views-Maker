@@ -76,9 +76,7 @@ body{
     font-family: 'rockwell';
     font-size: 200%;
     font-weight: bold;
-    display: flex;
-    align-items:center;
-    justify-content: space-between;
+    display:flex;
 }
 .modal-body{
 
